@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Pribadi — Web, UI &amp; Data</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FBF8F3',
+            sand: '#F2ECE1',
+            linen: '#E6DEC8',
+            espresso: '#2C241E',
+            umber: '#5C4F44',
+            sage: '#4F6352',
+            sageDark: '#3B4C3E',
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-cream text-espresso font-sans antialiased selection:bg-sage/20 selection:text-espresso">
+
+  <!-- Navigasi -->
+  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur border-b border-linen">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="font-serif text-xl font-medium tracking-tight text-espresso">
+        [Portofolio Pribadi Lekat Citra Fitrianti]
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-sm text-umber">
+        <a href="#biografi" class="hover:text-espresso transition">Biografi</a>
+        <a href="#goals" class="hover:text-espresso transition">Goals</a>
+        <a href="#proyek" class="hover:text-espresso transition">Proyek</a>
+        <a href="#kontak" class="px-4 py-2 rounded-full bg-sage text-cream font-medium hover:bg-sageDark transition">
+          Kolaborasi
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="max-w-5xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
+      <div class="grid md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-8 space-y-6">
+          <p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sage bg-sand px-3.5 py-1.5 rounded-full border border-linen">
+            Web Development · UI &amp; Visual · Data
+          </p>
+          <h1 class="font-serif text-4xl sm:text-5xl md:text-[3.35rem] leading-[1.15] font-medium text-espresso">
+            Membangun produk digital yang <span class="italic text-sageDark">fungsional</span>, rapi, dan berkarakter.
+          </h1>
+          <p class="text-base sm:text-lg text-umber leading-relaxed max-w-2xl">
+            Mahasiswa semester akhir S1 Informatika Universitas Amikom Yogyakarta yang membantu klien dan pelaku usaha menerjemahkan ide serta kebutuhan operasional menjadi antarmuka web, sistem aplikasi, dan solusi berbasis data yang terstruktur.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#proyek" class="px-6 py-3 rounded-xl bg-espresso text-cream text-sm font-medium hover:bg-umber transition">
+              Lihat Karya Pilihan
+            </a>
+            <a href="#goals" class="px-6 py-3 rounded-xl bg-sand text-espresso text-sm font-medium border border-linen hover:bg-linen/70 transition">
+              Arah &amp; Tujuan Kerja
+            </a>
+          </div>
+        </div>
+
+        <!-- Kartu Ringkas -->
+        <div class="md:col-span-4">
+          <div class="bg-sand rounded-2xl p-6 border border-linen space-y-5">
+            <div class="space-y-1">
+              <p class="text-xs uppercase tracking-wider text-umber font-medium">Status Saat Ini</p>
+              <p class="font-serif text-xl text-espresso">Terbuka untuk Proyek Freelance</p>
+            </div>
+            <div class="border-t border-linen pt-4 space-y-2.5 text-sm text-umber">
+              <div class="flex justify-between gap-2">
+                <span>Fokus Utama</span>
+                <span class="font-medium text-espresso text-right">Web &amp; UI / Data</span>
+              </div>
+              <div class="flex justify-between gap-2">
+                <span>Domisili</span>
+                <span class="font-medium text-espresso text-right">Yogyakarta</span>
+              </div>
+              <div class="flex justify-between gap-2">
+                <span>Alur Kerja</span>
+                <span class="font-medium text-espresso text-right">Terukur &amp; Tepat Waktu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Biografi -->
+    <section id="biografi" class="bg-sand/70 border-y border-linen py-20">
+      <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-12 gap-10 items-start">
+        <div class="md:col-span-4 space-y-5">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-widest text-sage mb-2">01 / Biografi</p>
+            <h2 class="font-serif text-3xl text-espresso">Pendekatan kerja yang tenang dan terarah.</h2>
+          </div>
+          <div class="overflow-hidden rounded-2xl border border-linen bg-cream aspect-[3/4] max-w-[240px]">
+            <img
+              src="Foto Pas Porto.jpeg"
+              alt="Foto Pas Porto"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+        </div>
+
+        <div class="md:col-span-8 space-y-4 text-umber leading-relaxed md:pt-8">
+          <p>
+            Saya adalah mahasiswa semester akhir program studi S1 Informatika di Universitas Amikom Yogyakarta yang menekuni pengembangan web, antarmuka digital, serta pengolahan data. Memiliki latar belakang pengalaman kerja lapangan dan keterlibatan di berbagai proyek kreatif maupun sistem aplikasi, saya terbiasa bekerja dengan pendekatan yang terstruktur, detail, dan berorientasi pada hasil.
+          </p>
+          <p>
+            Dalam peran <em>freelance</em>, saya membantu klien dan pelaku usaha menerjemahkan ide atau kebutuhan operasional menjadi produk digital yang fungsional dan menarik secara visual—mulai dari pengembangan halaman atau aplikasi web, penyusunan antarmuka yang bersih, hingga pengelolaan dan analisis data. Saya mengutamakan komunikasi yang jelas, ketepatan waktu, serta kemampuan beradaptasi terhadap kebutuhan spesifik setiap proyek agar solusi yang diberikan benar-benar dapat digunakan secara optimal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal & Creative Goals -->
+    <section id="goals" class="max-w-5xl mx-auto px-6 py-20">
+      <div class="max-w-2xl mb-12">
+        <p class="text-xs font-semibold uppercase tracking-widest text-sage mb-2">02 / Goals Freelance</p>
+        <h2 class="font-serif text-3xl sm:text-4xl text-espresso">Target personal dan arah kreatif dalam berkarya.</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Personal Goals -->
+        <div class="bg-cream rounded-2xl p-7 border border-linen space-y-5">
+          <div class="flex items-center justify-between">
+            <h3 class="font-serif text-2xl text-espresso">Personal Goals</h3>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-sand text-umber border border-linen">Profesional</span>
+          </div>
+          <ul class="space-y-3.5 text-sm text-umber leading-relaxed">
+            <li>
+              <strong class="text-espresso">Fleksibilitas &amp; Manajemen Waktu:</strong> Mengatur ritme kerja secara mandiri sehingga proyek <em>freelance</em> selaras dengan jadwal kuliah, riset skripsi, dan pengembangan diri.
+            </li>
+            <li>
+              <strong class="text-espresso">Kemandirian Finansial:</strong> Menghasilkan pendapatan tambahan yang stabil dan terukur dari keahlian digital secara etis dan profesional.
+            </li>
+            <li>
+              <strong class="text-espresso">Keterampilan Bisnis &amp; Komunikasi Klien:</strong> Mengasah negosiasi <em>scope of work</em>, valuasi jasa, penyusunan <em>timeline</em>, serta komunikasi klien yang jelas.
+            </li>
+            <li>
+              <strong class="text-espresso">Keseimbangan &amp; Kesiapan Karier:</strong> Membangun rekam jejak kerja nyata dan jejaring profesional sebagai bekal karier jangka panjang.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Creative Goals -->
+        <div class="bg-sand/60 rounded-2xl p-7 border border-linen space-y-5">
+          <div class="flex items-center justify-between">
+            <h3 class="font-serif text-2xl text-espresso">Creative Goals</h3>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-sage/15 text-sageDark font-semibold">Karya &amp; Teknis</span>
+          </div>
+          <ul class="space-y-3.5 text-sm text-umber leading-relaxed">
+            <li>
+              <strong class="text-espresso">Solusi Web &amp; Digital yang Fungsional dan Estetik:</strong> Merancang antarmuka web dan sistem digital yang responsif, rapi, dan nyaman digunakan.
+            </li>
+            <li>
+              <strong class="text-espresso">Eksplorasi Visual, Brand, &amp; Narasi:</strong> Mengembangkan kepekaan desain, komposisi visual, dan <em>storytelling</em> agar karya memiliki identitas kuat.
+            </li>
+            <li>
+              <strong class="text-espresso">Penerapan Pendekatan Data &amp; AI:</strong> Mengintegrasikan pengolahan data dan <em>machine learning</em> ke dalam proyek digital yang analitis dan solutif.
+            </li>
+            <li>
+              <strong class="text-espresso">Konsistensi &amp; Kualitas Eksekusi:</strong> Menjaga mutu dari perancangan hingga <em>deployment</em> dengan alur kerja terorganisir dan terdokumentasi.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyek Pilihan -->
+    <section id="proyek" class="bg-sand/70 border-y border-linen py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-widest text-sage mb-2">03 / Proyek Pilihan</p>
+            <h2 class="font-serif text-3xl sm:text-4xl text-espresso">Ringkasan area karya &amp; eksplorasi.</h2>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="bg-cream rounded-2xl p-6 border border-linen flex flex-col justify-between space-y-5">
+            <div class="space-y-2.5">
+              <span class="text-xs font-medium text-sage">Web &amp; Antarmuka</span>
+              <h3 class="font-serif text-xl text-espresso">Landing Page &amp; Sistem Web Responsif</h3>
+              <p class="text-sm text-umber leading-relaxed">
+                Pembuatan halaman web dan aplikasi interaktif dengan struktur kode bersih, tata letak adaptif, serta pengalaman pengguna yang jelas.
+              </p>
+            </div>
+            <p class="text-xs text-umber/80 pt-2 border-t border-linen">HTML · Tailwind CSS · JavaScript</p>
+          </article>
+
+          <article class="bg-cream rounded-2xl p-6 border border-linen flex flex-col justify-between space-y-5">
+            <div class="space-y-2.5">
+              <span class="text-xs font-medium text-sage">Brand &amp; Visual</span>
+              <h3 class="font-serif text-xl text-espresso">Identitas Visual &amp; Komposisi Konten</h3>
+              <p class="text-sm text-umber leading-relaxed">
+                Penyusunan arah visual, tipografi, dan tata letak digital yang konsisten untuk kebutuhan presentasi brand maupun katalog karya.
+              </p>
+            </div>
+            <p class="text-xs text-umber/80 pt-2 border-t border-linen">UI Layout · Visual Direction · Storytelling</p>
+          </article>
+
+          <article class="bg-cream rounded-2xl p-6 border border-linen flex flex-col justify-between space-y-5">
+            <div class="space-y-2.5">
+              <span class="text-xs font-medium text-sage">Data &amp; Eksperimen</span>
+              <h3 class="font-serif text-xl text-espresso">Pengolahan Data &amp; Pemodelan Prediktif</h3>
+              <p class="text-sm text-umber leading-relaxed">
+                Eksperimen praproses data, penanganan ketidakseimbangan kelas, dan evaluasi model klasifikasi secara sistematis dan terukur.
+              </p>
+            </div>
+            <p class="text-xs text-umber/80 pt-2 border-t border-linen">Data Prep · Machine Learning · Evaluation</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tautan Personal Brand & Kontak -->
+    <section id="kontak" class="max-w-5xl mx-auto px-6 py-20">
+      <div class="bg-sand rounded-3xl p-8 sm:p-12 border border-linen space-y-8">
+        <div class="max-w-2xl space-y-2">
+          <p class="text-xs font-semibold uppercase tracking-widest text-sage">04 / Personal Brand &amp; Tautan</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-espresso">Terhubung &amp; jelajahi profil lengkap.</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 text-sm">
+          <a href="https://www.linkedin.com/in/lekat-citra-fitrianti-824322308" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between gap-3 p-4 rounded-xl bg-cream border border-linen hover:border-sage transition">
+            <div class="min-w-0">
+              <p class="font-semibold text-espresso">LinkedIn</p>
+              <p class="text-xs text-umber truncate">https://www.linkedin.com/in/lekat-citra-fitrianti-824322308</p>
+            </div>
+            <span class="text-sage font-medium shrink-0">↗</span>
+          </a>
+
+          <a href="https://github.com/LekatCitra5501" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between gap-3 p-4 rounded-xl bg-cream border border-linen hover:border-sage transition">
+            <div class="min-w-0">
+              <p class="font-semibold text-espresso">GitHub</p>
+              <p class="text-xs text-umber truncate">https://github.com/LekatCitra5501</p>
+            </div>
+            <span class="text-sage font-medium shrink-0">↗</span>
+          </a>
+
+          <a href="#top" class="flex items-center justify-between gap-3 p-4 rounded-xl bg-cream border border-linen hover:border-sage transition">
+            <div class="min-w-0">
+              <p class="font-semibold text-espresso">Portofolio / Website Pribadi</p>
+              <p class="text-xs text-umber truncate">https://domain-atau-portofolio-kamu</p>
+            </div>
+            <span class="text-sage font-medium shrink-0">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-linen py-8 text-center text-xs text-umber">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>© 2026 [Lekat Citra Fitrianti].</p>
+      <p>S1 Informatika · Universitas Amikom Yogyakarta</p>
+    </div>
+  </footer>
+
+</body>
+</html>
